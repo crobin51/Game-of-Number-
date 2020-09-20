@@ -1,0 +1,425 @@
+/* Add your CSS below! */
+/* Add your CSS below! */
+html, body, div, span, article, header, footer, nav,
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+@media only screen and (max-width: 768px){
+    div#mainnav ul{width: 40%}
+     #maincontainer{width:100%;}
+      body{width:100%;}  
+}
+body {
+    background-image:url(../images/main.jpg);
+    background-repeat: repeat;   
+}
+@font-face{
+  font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+}
+div#maincontainer{
+    background-image:url(../images/bg.png);
+    margin: auto;
+    max-width:1000px;  
+}
+h5#htitle{
+    text-align: center;
+    font-size: 4.5em;
+    color: darkblue;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    padding: 30px;
+}
+div#mainnav ul li {
+    list-style: none;
+    display: inline-block;
+}
+div#mainnav ul {
+    text-align: center;
+    
+}
+@-webkit-keyframes glow{
+    
+   50% {
+    opacity: 0.7;
+  }
+}
+div#mainnav ul li div#mnav_1 {
+    width: 90px;
+    height: 60px;
+    background-image: url(../images/mnav_1.jpg); 
+    background-size: 90px 60px;
+  
+    -webkit-animation:glow 0.7s ease-in-out infinite;
+    animation: glow 0.7s ease-in-out infinite;
+    margin-left: 10px; 
+ } 
+div#mainnav ul li div#mnav_2 {
+    width:90px;
+    height:60px;
+    background-image:  url(../images/mnav_2.jpg);
+    background-size: 90px 60px;
+    
+    margin-left: 10px; 
+    
+}
+div#mainnav ul li div#mnav_3 {
+    width: 90px;
+    height: 60px;
+    background-image:  url(../images/mnav_3.jpg);
+    background-size: 90px 60px;
+    
+    margin-left: 10px;
+}
+#contgame{
+  width: 79%;
+  margin: auto;
+  margin-bottom: 400px;
+  
+}
+div#contgame div#left_nav{
+    width: 270px;
+    float:left;
+    
+}
+div#contgame div#left_nav div#numbers{
+    background-image: url(../images/numbers.JPG);
+    background-size: 250px 60px;
+    background-repeat: no-repeat;
+    width:250px ;
+    height: 60px;
+    
+    border-radius: 5px;
+}
+div#contgame div#left_nav div#num1{
+    background-image: url(../images/5.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    width:50px;
+    height: 50px;  
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#contgame div#left_nav div#num2{
+    background-image: url(../images/3.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;  
+    border: 2px solid darkblue;   
+    border-radius: 5px;
+}
+div#contgame div#left_nav div#num3{
+    background-image: url(../images/4.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;  
+    border: 1px solid darkblue;   
+    border-radius: 5px;
+}
+div#contgame div#left_nav div#newdraw{
+    background-image: url(../images/newdraw.png);
+     background-size: 165px 50px;
+    background-repeat: no-repeat;
+    width: 165px;
+    height: 50px;  
+   
+    border-radius: 5px;
+}
+div#contgame div#right_nav{
+    width: 270px; 
+    float:left; 
+}
+div#contgame div#right_nav div#scores{
+    background-image: url(../images/scores.JPG);
+    background-size: 250px 60px;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 60px;
+    border-radius:5px;
+}
+div#contgame div#right_nav div#scoreval{
+    font-weight: bold;
+    text-align: center;
+    width:250px;
+    height: 30px;
+    font-size: 24px;
+    border: 2px solid darkblue;
+    
+}
+div#contgame div#right_nav div#newboard{
+    background-image: url(../images/newboard.png);
+    background-size: 165px 50px;
+    background-repeat: no-repeat;
+    width: 165px;
+    height: 50px;  
+   
+    border-radius:5px;
+}
+div#contgame div#startgame{
+    background-image: url(../images/startgame.png);
+    background-size: 165px 50px;
+    background-repeat: no-repeat;
+    width: 165px;
+    height: 50px;  
+    
+    float: left;
+}
+@-webkit-keyframes move{
+   0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+
+}
+div#gamearea4x4{
+    width: 250px;
+    margin:auto;
+    float: left;
+   -webkit-animation: move 1s .1s 1;
+    
+}
+div#gamearea4x4 div.row1
+{
+    display: inline-block;
+    float:left;
+}
+div#gamearea4x4 div.row1#ga4r11{
+    background-image: url(../images/8.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    
+}
+div#gamearea4x4 div.row1#ga4r11:hover{
+    background-image: url(../images/s8.png);
+}
+div#gamearea4x4 div.row1#ga4r12{
+    background-image: url(../images/1.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    
+}
+div#gamearea4x4 div.row1#ga4r12:hover{
+    background-image: url(../images/s1.png);
+}
+div#gamearea4x4 div.row1#ga4r13{
+    background-image: url(../images/9.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    
+}
+div#gamearea4x4 div.row1#ga4r13:hover{
+    background-image: url(../images/s9.png);
+}
+div#gamearea4x4 div.row1#ga4r14{
+    background-image: url(../images/6.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    
+}
+div#gamearea4x4 div.row1#ga4r14:hover{
+    background-image: url(../images/s6.png);
+}
+div#gamearea4x4 div.row2
+{
+    display: inline-block;
+    float:left;
+}
+div#gamearea4x4 div.row2#ga4r21{
+    background-image: url(../images/4.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    
+}
+div#gamearea4x4 div.row2#ga4r21:hover{
+    background-image: url(../images/s4.png);
+}
+div#gamearea4x4 div.row2#ga4r22{
+    background-image: url(../images/7.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    
+}
+div#gamearea4x4 div.row2#ga4r22:hover{
+    background-image: url(../images/s7.png);
+}
+div#gamearea4x4 div.row2#ga4r23{
+    background-image: url(../images/3.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    
+}
+div#gamearea4x4 div.row2#ga4r23:hover{
+    background-image: url(../images/s3.png);
+}
+div#gamearea4x4 div.row2#ga4r24{
+    background-image: url(../images/1.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    
+}
+div#gamearea4x4 div.row2#ga4r24:hover{
+    background-image: url(../images/s1.png);
+}
+div#gamearea4x4 div.row3
+{
+    display: inline-block;
+    float:left;
+}
+div#gamearea4x4 div.row3#ga4r31{
+    background-image: url(../images/4.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    
+}
+div#gamearea4x4 div.row3#ga4r31:hover{
+    background-image: url(../images/s4.png);
+}
+div#gamearea4x4 div.row3#ga4r32{
+    background-image: url(../images/8.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    
+}
+div#gamearea4x4 div.row3#ga4r32:hover{
+    background-image: url(../images/s8.png);
+}
+div#gamearea4x4 div.row3#ga4r33{
+    background-image: url(../images/5.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    
+}
+div#gamearea4x4 div.row3#ga4r33:hover{
+    background-image: url(../images/s5.png);
+}
+div#gamearea4x4 div.row3#ga4r34{
+    background-image: url(../images/2.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    
+}
+div#gamearea4x4 div.row3#ga4r34:hover{
+    background-image: url(../images/s2.png);
+}
+div#gamearea4x4 div.row4
+{
+    display: inline-block;
+    float:left;
+}
+div#gamearea4x4 div.row4#ga4r41{
+    background-image: url(../images/8.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    
+}
+div#gamearea4x4 div.row4#ga4r41:hover{
+    background-image: url(../images/s8.png);
+}
+div#gamearea4x4 div.row4#ga4r42{
+    background-image: url(../images/1.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    
+}
+div#gamearea4x4 div.row4#ga4r42:hover{
+    background-image: url(../images/s1.png);
+}
+div#gamearea4x4 div.row4#ga4r43{
+    background-image: url(../images/9.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+    
+}
+div#gamearea4x4 div.row4#ga4r43:hover{
+    background-image: url(../images/s9.png);
+}
+div#gamearea4x4 div.row4#ga4r44{
+    background-image: url(../images/4.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+}
+div#gamearea4x4 div.row4#ga4r44:hover{
+    background-image: url(../images/s4.png);
+}
+div#footer_main{
+   text-align: center; 
+   background-image:url(../images/main.jpg);
+   clear:both;
+   max-width: 1000px;
+}

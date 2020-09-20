@@ -1,0 +1,52 @@
+*{
+
+margin:0px;
+
+
+}
+
+#main{
+	height: 500px;
+	width: 350px;
+	margin: 150px;
+	background-color: skyblue;
+	overflow:hidden;
+
+}
+
+
+#main span {
+	
+	height:60px;
+	width:60px;
+	background-color:rgb(255,0,0);
+	font-size:2em;
+	display: inline-block;
+	text-align:center;
+	margin: 10px;
+	float: left;
+}
+
+#clcme{
+	height:60px;
+	width:160px;
+	background-color:rgb(0,150,0);
+	font-size:2em;
+	display: inline-block;
+	text-align:center;
+	margin: 10px;
+	float: left;	
+}
+
+#plyagn{
+
+height:60px;
+	width:160px;
+	background-color:rgb(255,250,0);
+	font-size:2em;
+	display: inline-block;
+	text-align:center;
+	margin: 10px;
+	float: left;
+
+}

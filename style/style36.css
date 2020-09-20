@@ -1,0 +1,661 @@
+/* Add your CSS below! */
+/* Add your CSS below! */
+html, body, div, span, article, header, footer, nav,
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+@media screen and (max-width:768px){
+    div#maincontainer{width: 100%;}
+    body{width:100%}  
+    div#mainnav ul {width:35%; }
+
+}
+body {
+    background-image:url(../images/main.jpg);
+    background-repeat: repeat;
+    
+
+}
+div#maincontainer{
+    background-image:url(../images/bg.png);
+    margin: auto;
+    max-width:1000px;     
+}
+@font-face{
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+}
+h5#htitle{
+    text-align: center;
+    font-size: 4.5em;
+    color: darkblue;
+    font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+    padding: 30px
+}
+div#mainnav ul li{
+    list-style: none;
+    display: inline-block; 
+}
+div#mainnav ul {
+    text-align: center ;
+    max-width:865px;
+}
+div#mainnav ul li div#mnav_1 {
+    width: 90px;
+    height: 60px;
+    background-image: url(../images/mnav_1.jpg); 
+    background-size: 90px 60px;
+   
+    margin-left: 10px;
+      }
+div#mainnav ul li div#mnav_2 {
+    width:90px;
+    height:60px;
+    background-image:  url(../images/mnav_2.jpg);
+    background-size: 90px 60px;
+    
+    margin-left: 10px;
+   
+}
+@-webkit-keyframes glow{
+    
+   50% {
+    opacity: 0.7;
+  }
+}
+div#mainnav ul li div#mnav_3 {
+    width: 90px;
+    height: 60px;
+    background-image:  url(../images/mnav_3.jpg);
+    background-size: 90px 60px;
+   
+    -webkit-animation:glow 0.7s ease-in-out infinite;
+    animation: glow 0.7s ease-in-out infinite;
+   margin-left: 10px;
+}
+#contgame{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 400px;
+}
+div#contgame div#left_nav{
+    width: 250px;
+    float: left;
+    margin-right: 20px
+}
+div#contgame div#left_nav div#numbers{
+    background-image: url(../images/numbers.JPG);
+    background-size: 250px 60px;
+    background-repeat: no-repeat;
+    width:250px ;
+    height: 60px;
+  
+    border-radius: 5px;
+}
+div#contgame div#left_nav div#num1{
+    background-image: url(../images/5.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    width:50px;
+    height: 50px;  
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#contgame div#left_nav div#num2{
+    background-image: url(../images/3.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;  
+    border: 2px solid darkblue;   
+    border-radius: 5px;
+}
+div#contgame div#left_nav div#num3{
+    background-image: url(../images/4.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;  
+    border: 1px solid darkblue;   
+    border-radius: 5px;
+}
+div#contgame div#left_nav div#newdraw{
+    background-image: url(../images/newdraw.png);
+     background-size: 165px 50px;
+    background-repeat: no-repeat;
+    width: 165px;
+    height: 50px;  
+ 
+    border-radius: 5px;
+}
+div#contgame div#right_nav{
+    width: 250px; 
+    float:left; 
+}
+div#contgame div#right_nav div#scores{
+    background-image: url(../images/scores.JPG);
+    background-size: 250px 60px;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 60px;
+}
+div#contgame div#right_nav div#scoreval{
+    font-weight:bold;
+    text-align: center;
+    width:250px;
+    height: 30px;
+    font-size: 24px;
+    border: 2px solid darkblue;
+    
+}
+div#contgame div#right_nav div#newboard{
+    background-image: url(../images/newboard.png);
+    background-size: 165px 50px;
+    background-repeat: no-repeat;
+    width: 165px;
+    height: 50px;  
+    
+}
+div#contgame div#startgame{
+    background-image: url(../images/startgame.png);
+    background-size: 165px 50px;
+    background-repeat: no-repeat;
+    width: 165px;
+    height: 50px;  
+   
+    float: left;
+}
+@-webkit-keyframes move{
+   0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+
+}
+div#gamearea6x6{
+    width: 285px;
+    float: left;
+    -webkit-animation: move 1s .1s 1;
+}
+div#gamearea6x6 div.row1
+{
+    display: inline-block;
+    float: left;
+}
+div#gamearea6x6 div.row1#ga6r11{
+    background-image: url(../images/1.png);
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue; 
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row1#ga6r11:hover{
+    background-image: url(../images/s1.png);
+}
+
+div#gamearea6x6 div.row1#ga6r12{
+    background-image: url(../images/2.png);
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row1#ga6r12:hover{
+     background-image: url(../images/s2.png);
+}
+div#gamearea6x6 div.row1#ga6r13{
+    background-image: url(../images/4.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row1#ga6r13:hover{
+     background-image: url(../images/s4.png);
+}
+div#gamearea6x6 div.row1#ga6r14{
+    background-image: url(../images/8.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row1#ga6r14:hover{
+     background-image: url(../images/s8.png);
+}
+div#gamearea6x6 div.row1#ga6r15{
+    background-image: url(../images/3.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row1#ga6r15:hover{
+     background-image: url(../images/s3.png);
+}
+div#gamearea6x6 div.row1#ga6r16{
+    background-image: url(../images/3.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row1#ga6r16:hover{
+     background-image: url(../images/s3.png);
+}
+div#gamearea6x6 div.row2
+{
+    display: inline-block;
+    float: left;
+}
+div#gamearea6x6 div.row2#ga6r21{
+    background-image: url(../images/5.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row2#ga6r21:hover{
+     background-image: url(../images/s5.png);
+}
+div#gamearea6x6 div.row2#ga6r22{
+    background-image: url(../images/2.png);
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row2#ga6r22:hover{
+     background-image: url(../images/s2.png);
+}
+div#gamearea6x6 div.row2#ga6r23{
+    background-image: url(../images/4.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row2#ga6r23:hover{
+     background-image: url(../images/s4.png);
+}
+div#gamearea6x6 div.row2#ga6r24{
+    background-image: url(../images/8.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row2#ga6r24:hover{
+     background-image: url(../images/s8.png);
+}
+div#gamearea6x6 div.row2#ga6r25{
+    background-image: url(../images/3.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row2#ga6r25:hover{
+     background-image: url(../images/s3.png);
+}
+div#gamearea6x6 div.row2#ga6r26{
+    background-image: url(../images/3.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row2#ga6r26:hover{
+     background-image: url(../images/s3.png);
+}
+div#gamearea6x6 div.row3
+{
+    display: inline-block;
+    float: left;
+}
+div#gamearea6x6 div.row3#ga6r31{
+    background-image: url(../images/5.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row3#ga6r31:hover{
+     background-image: url(../images/s5.png);
+}
+div#gamearea6x6 div.row3#ga6r32{
+    background-image: url(../images/2.png);
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row3#ga6r32:hover{
+     background-image: url(../images/s2.png);
+}
+div#gamearea6x6 div.row3#ga6r33{
+    background-image: url(../images/4.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row3#ga6r33:hover{
+     background-image: url(../images/s4.png);
+}
+div#gamearea6x6 div.row3#ga6r34{
+    background-image: url(../images/8.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row3#ga6r34:hover{
+     background-image: url(../images/s8.png);
+}
+div#gamearea6x6 div.row3#ga6r35{
+    background-image: url(../images/3.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row3#ga6r35:hover{
+     background-image: url(../images/s3.png);
+}
+div#gamearea6x6 div.row3#ga6r36{
+    background-image: url(../images/3.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row3#ga6r36:hover{
+     background-image: url(../images/s3.png);
+}
+div#gamearea6x6 div.row4
+{
+    display: inline-block;
+    float: left;
+}
+div#gamearea6x6 div.row4#ga6r41{
+    background-image: url(../images/5.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row4#ga6r41:hover{
+     background-image: url(../images/s5.png);
+}
+div#gamearea6x6 div.row4#ga6r42{
+    background-image: url(../images/2.png);
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row4#ga6r42:hover{
+     background-image: url(../images/s2.png);
+}
+div#gamearea6x6 div.row4#ga6r43{
+    background-image: url(../images/4.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row4#ga6r43:hover{
+     background-image: url(../images/s4.png);
+}
+div#gamearea6x6 div.row4#ga6r44{
+    background-image: url(../images/8.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row4#ga6r44:hover{
+     background-image: url(../images/s8.png);
+}
+div#gamearea6x6 div.row4#ga6r45{
+    background-image: url(../images/3.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row4#ga6r45:hover{
+     background-image: url(../images/s3.png);
+}
+div#gamearea6x6 div.row4#ga6r46{
+    background-image: url(../images/3.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row4#ga6r46:hover{
+     background-image: url(../images/s3.png);
+}
+div#gamearea6x6 div.row5
+{
+    display: inline-block;
+    float: left;
+}
+
+div#gamearea6x6 div.row5#ga6r51{
+    background-image: url(../images/5.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row5#ga6r51:hover{
+     background-image: url(../images/s5.png);
+}
+div#gamearea6x6 div.row5#ga6r52{
+    background-image: url(../images/2.png);
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row5#ga6r52:hover{
+     background-image: url(../images/s2.png);
+}
+div#gamearea6x6 div.row5#ga6r53{
+    background-image: url(../images/4.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row5#ga6r53:hover{
+     background-image: url(../images/s4.png);
+}
+div#gamearea6x6 div.row5#ga6r54{
+    background-image: url(../images/8.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row5#ga6r54:hover{
+     background-image: url(../images/s8.png);
+}
+div#gamearea6x6 div.row5#ga6r55{
+    background-image: url(../images/3.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row5#ga6r55:hover{
+     background-image: url(../images/s3.png);
+}
+div#gamearea6x6 div.row5#ga6r56{
+    background-image: url(../images/3.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row5#ga6r56:hover{
+     background-image: url(../images/s3.png);
+}
+div#gamearea6x6 div.row6
+{
+    display: inline-block;
+    float: left;
+}
+div#gamearea6x6 div.row6#ga6r61{
+    background-image: url(../images/3.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row6#ga6r61:hover{
+     background-image: url(../images/s3.png);
+}
+div#gamearea6x6 div.row6#ga6r62{
+    background-image: url(../images/6.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row6#ga6r62:hover{
+     background-image: url(../images/s6.png);
+}
+div#gamearea6x6 div.row6#ga6r63{
+    background-image: url(../images/9.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row6#ga6r63:hover{
+     background-image: url(../images/s9.png);
+}
+div#gamearea6x6 div.row6#ga6r64{
+    background-image: url(../images/1.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row6#ga6r64:hover{
+     background-image: url(../images/s1.png);
+}
+div#gamearea6x6 div.row6#ga6r65{
+    background-image: url(../images/2.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row6#ga6r65:hover{
+     background-image: url(../images/s2.png);
+}
+div#gamearea6x6 div.row6#ga6r66{
+    background-image: url(../images/5.png);
+    width: 35px;
+    height:35px;
+    background-size: 35px 35px;
+    margin: 2px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+div#gamearea6x6 div.row6#ga6r66:hover{
+     background-image: url(../images/s5.png);
+}
+div#footer_main{
+   text-align: center; 
+   background-image:url(../images/main.jpg);
+   clear:both;
+   padding-top: 10px;
+   max-width: 1000px;
+}
